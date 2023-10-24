@@ -1,5 +1,36 @@
 h2 + p {
     font-weight: bold;
 }
+section &gt p {
+      color: red;
+    }
 
- 
+    h2 ~ p {
+      font-style: italic;
+    }
+    
+section p {
+          border: 1px solid #000;
+        }
+    
+
+        &it;!DOCTYPE html&gt;
+&it;html&gt;
+&it;head&gt;
+  &it;style&gt;
+    
+  &it;/style&gt;
+&it;/head&gt;
+&it;body&gt;
+  &it;section&gt;
+    &it;h2&gt;&it;/h2&gt;
+    &it;p&gt;&it;/p&gt;
+  &it;/section&gt;
+  &it;section&gt;
+    &it;h2&gt;&it;/h2&gt;
+    &it;div&gt;
+      &it;p&gt;&it;/p&gt;
+    &it;/div&gt;
+  &it;/section&gt;
+&it;/body&gt;
+&it;/html&gt;
