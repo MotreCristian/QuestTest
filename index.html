@@ -3,55 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quest</title>
+    <title>Work</title>
 </head>
 <body>
-    <center>
-        <h1> <strong style= "color: blueviolet"> Romeo and Julieta </strong></h1>
-    </center>
-    <p>
-        <strong style="color: rgb(145, 184, 255)"> ACT 1</strong></p>
-        <p>
-            <strong style="color: rgb(145, 184, 255)"> PROLOGUE</strong>
-        </p>
-        <p>
-        Two households, both alike in dignity,
-        In fair Verona, where we lay our scene,
-        From ancient grudge break to new mutiny,
-        Where civil blood makes civil hands unclean.
-        From forth the fatal loins of these two foes
-        A pair of star-cross'd lovers take their life;
-        Whose misadventured piteous overthrows
-        Do with their death bury their parents' strife.
-        The fearful passage of their death-mark'd love,
-        And the continuance of their parents' rage,
-        Which, but their children's end, nought could remove,
-        Is now the two hours' traffic of our stage;
-        The which if you with patient ears attend,
-        What here shall miss, our toil shall strive to mend. 
-        </p>
-        <p>
-            <strong style="color: rgb(145, 184, 255)"> SCENE I.Verona. A public place.</strong>
-        </p>
+    <section>
+        <h2>Next-sibling combinator (+)</h2>
+        <p>Селектор '+' вибирає наступного сусіда відносно вказаного елемента.</p>
+        <pre>&it;!DOCTYPE html&gt;
+            &it;html&gt;
+            &it;head&gt;
+            
+          
+           &it;/head&gt;
+            &it;body&gt;
+             &it;section&gt;
+               &it;h2&gt;&it;/h2&gt;
+               &it;p&gt&it;/p&gt;
+             &it;/section&gt;
+             &it;section&gt;
+               &it;h2&gt;&it;/h2&gt;
+               &it;p&gt;&it;/p&gt;
+             &it;/section&gt;
+            &it;/body&gt;
+            &it;/html&gt;
+            CSS
+        h2 + p {
+            font-weight: bold;
+        }</pre>
+    </section>
+    <p>У цьому прикладі лише &it;p&gt;, безпосередньо слідуючий за &it;h2&gt;, буде жирним.</p> 
+    
+<hr>
+    
+    <h2> Child combinator (>)</h2>
+    <p>Селектор '>' вибирає елементи, які є прямими дітьми вказаного елемента.</p>
+    <pre>&it;!DOCTYPE html&gt;
+        &it;html&gt;
+        &it;head&gt;
+          
+        &it;/head&gt;
+        &it;body&gt;
+          &it;section&gt;
+            &it;h2&gt;&it;/h2&gt;
+            &it;p&gt;&it;/p&gt;
+          &it;/section&gt;
+          &it;section&gt;
+            &it;h2&gt;&it;/h2&gt;
+            &it;div&gt;
+              &it;p&gt;&it;/p&gt;
+            &it;/div&gt;
+          &it;/section&gt;
+        &it;/body&gt;
+        &it;/html&gt;
+         
         
-        <p>
-            <i>Enter SAMPSON and GREGORY, of the house of Capulet, armed with swords and bucklers</i>
-        </p>
-        
-        <p> 
-            <strong style="color: rgb(145, 184, 255)"> SAMPSON</strong>
-        </p>
-        
-        <p>
-            Gregory, o' my word, we'll not carry coals.
-        </p>
-        
-        <p>
-            <strong style="color: rgb(145, 184, 255)"> GREGORY</strong>
-        </p>
-        
-        <p>
-            No, for then we should be colliers.
-        </p>
+        CSS:
+        section &gt; p {
+            color: red;
+        }</pre>
+    <p>У цьому прикладі тільки елементи &it;p&gt;, які є безпосередніми дітьми &it;section&gt;, матимуть червоний текст.</p>
+
+<hr>
+    <h2>Subsequent sibling combinator (~)</h2>
+    <p>Селектор '~' вибирає всі наступні сусідні елементи відносно вказаного елемента.</p>
+    <pre>&it;!DOCTYPE html&gt;
+        &it;html&gt;
+        &it;head&gt;
+        &it;/head&gt;
+        &it;body&gt;
+          &it;section&gt;
+            &it;h2&gt;&it;/h2&gt;
+            &it;p&gt;&it;/p&gt;
+            &it;p&gt;&it;/p&gt;
+          &it;/section&gt;
+          &it;section&gt;
+            &it;h2&gt;&it;/h2&gt;
+            &it;p&gt;&it;/p&gt;
+          &it;/section&gt;
+        &it;/body&gt;
+        &it;/html&gt;  
+    
+    CSS:
+    h2 ~ p {
+        font-style: italic;
+    }</pre>
+    <p>У цьому прикладі всі &it;p&gt;, які слідують за &it;h2&gt;, матимуть курсивний текст.</p>
+
+<hr>
+    <h2>Descendant combinator (" ")</h2>
+    <p>Селектор-потомок вибирає всі елементи, які є нащадками вказаного елемента.</p>
+    <pre>
+        &it;!DOCTYPE html&gt;
+        &it;html&gt;
+        &it;head&gt;
+          &it;style&gt;
+            
+          &it;/style&gt;
+        &it;/head&gt;
+        &it;body&gt;
+          &it;section&gt;
+            &it;h2&gt;&it;/h2&gt;
+            &it;p&gt;&it;/p&gt;
+          &it;/section&gt;
+          &it;section&gt;
+            &it;h2&gt;&it;/h2&gt;
+            &it;div&gt;
+              &it;p&gt;&it;/p&gt;
+            &it;/div&gt;
+          &it;/section&gt;
+        &it;/body&gt;
+        &it;/html&gt;
+        CSS:
+        section p {
+        border: 1px solid #000;
+      }
+</pre>
+    <p>У цьому прикладі всі &it;p&gt;, які є нащадками &it;section&gt;, матимуть рамку.
+        Ці приклади показують, як ви можете використовувати CSS-селектори разом із семантичними тегами HTML для стилізації різних частин вашої сторінки.</p>
 </body>
 </html>
