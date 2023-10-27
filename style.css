@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/Image.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.text {
+  background-color: rgba(42, 120, 108, 0.5);
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
