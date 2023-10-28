@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Child combinator (>)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quest</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Селектор '>' вибирає елементи, які є прямими дітьми вказаного елемента.</p>
-    <pre>&it;!DOCTYPE html&gt;
-        &it;html&gt;
-        &it;head&gt;
-          
-        &it;/head&gt;
-        &it;body&gt;
-          &it;section&gt;
-            &it;h2&gt;Заголовок 1&it;/h2&gt;
-            &it;p&gt;Опис 1 (червоний)&it;/p&gt;
-          &it;/section&gt;
-          &it;section&gt;
-            &it;h2&gt;Заголовок 2&it;/h2&gt;
-            &it;div&gt;
-              &it;p&gt;Опис 2 (не червоний)&it;/p&gt;
-            &it;/div&gt;
-          &it;/section&gt;
-        &it;/body&gt;
-        &it;/html&gt;
-         
-        
-        CSS:
-        section &gt; p {
-            color: red;
-        }</pre>
-    <p>У цьому прикладі тільки елементи &it;p&gt;, які є безпосередніми дітьми &it;section&gt;, матимуть червоний текст.</p>
+  <div class="products">
+    <div class="product">
+      <img src="img/Pepper.png" alt="">
+      <p>Pepper</p>
+    </div>
+
+    <div class="product">
+      <img src="img/Apple.png" alt="">
+      <p>Apple</p>
+    </div>
+
+    <img src="img/Cheese.png" alt="">
+    <p>Cheese</p>
+
+    <img src="img/Corn.png" alt="">
+    <p>Corn</p>
+
+    <img src="img/Mushroom.png" alt="">
+    <p>Mushroom</p>
+
+    <img src="img/Garlic.png" alt="">
+    <p>Garlic</p>
+
+    <img src="img/Beef.png" alt="">
+    <p>Beef</p>
+
+    <img src="img/Fish.png" alt="">
+    <p>Fish</p>
+
+    <img src="img/Eggs.png" alt="">
+    <p>Egss</p>
+
+
+    <img src="img/Coriander.png" alt="">
+    <p>Coriander</p>
+
+  </div>
+  <hr>
+  <div class="footer">
+    <center><p>that's all</p></center>
+  </div>
 </body>
 </html>
