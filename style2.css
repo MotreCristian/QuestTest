@@ -1,0 +1,56 @@
+body {
+    margin: 0 auto;
+    border: 1px solid gray
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: right;
+}
+
+span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.col-1 {
+    background-color: gray;
+}
+
+#down {
+    caption-side: bottom;
+    background-color: gray;
+    color: rgb(0, 0, 0);
+}
+tfoot {
+    color: white
+}
+.col-2 {
+    background-color: rgb(0, 234, 255);
+    color: white;
+}
+
+.col-3 {
+    background-color: rgb(0, 255, 42);
+    color: white;
+}
+
+.col-4 {
+    background-color: rgb(242, 255, 0);
+    color: white;
+}
+
+.col-5 {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}

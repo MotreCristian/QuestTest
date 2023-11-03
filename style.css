@@ -1,24 +1,4 @@
-/*body {
-  margin: 0;
-  padding: 0;
-  background-image: url("img/Image.jpg");
-  background-attachment: scroll;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.text {
-  background-color: rgba(42, 120, 108, 0.5);
-  padding: 20px;
-  width: 70%;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-} */
-
+/* HW1*/
 .products {
   text-align: center;
 }
@@ -41,3 +21,292 @@
 .footer {
   text-align: center;
 }
+
+/* HW2*/
+.menu {
+  width: 200px;
+  height: 30%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-left: 5px; 
+}
+
+.menu img {
+  width: 30px; 
+  height: 30px;
+}
+
+.menu p {
+  font-size: 14px;
+  margin: 0;
+  padding: 5px;
+}
+.menu-item:hover {
+  background-color: #000000; 
+}
+
+.menu-item:hover img {
+  filter: grayscale(0%); 
+}
+
+.menu-item:hover p {
+  color: #ffffff; 
+}
+
+/*HW3*/
+
+.structure {
+  width: 1000px;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px;
+  color: white;
+  background-color: rgb(139, 47, 76);
+  position: absolute;
+  top: 30px;
+}
+
+.structure2 {
+  width: 1000px;
+  height: 40px;
+  color: white;
+  background-color: rgb(105, 22, 50);
+  position: absolute;
+  top: 100px;
+}
+
+.structure3 {
+  width: 250px;
+  height: 65px;
+  color: white;
+  background-color: rgb(218, 110, 146);
+  position: absolute;
+  top: 150px;
+  text-align: center;
+}
+
+.structure4 {
+  width: 250px;
+  height: 100px;
+  color: white;
+  background-color: rgb(218, 110, 146);
+  position: absolute;
+  top: 225px;
+  text-align: center;
+}
+
+.structure5 {
+  width: 600px;
+  height: 250px;
+  color: white;
+  background-color: rgb(218, 110, 146);
+  position: absolute;
+  top: 150px;
+  left: 270px;
+}
+
+.structure5 {
+  float: right;
+}
+.structure6 {
+  width: 550px;
+  height: 75px;
+  color: white;
+  background-color: rgb(253, 184, 207);
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.structure7 {
+  width: 550px;
+  height: 75px;
+  color: white;
+  background-color: rgb(253, 184, 207);
+  position: absolute;
+  top: 290px;
+  left: 300px;
+}
+
+.structure7 {
+  float: right;
+}
+
+.structure8 {
+  width: 100px;
+  height: 250px;
+  background-color: rgb(218, 110, 146);
+  position: absolute;
+  top: 150px;
+  right: 160px;
+}
+
+.structure8 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+  writing-mode: vertical-lr;
+
+  letter-spacing: -4px;
+  text-orientation: upright;
+}
+
+.structure9 {
+  width: 1000px;
+  height: 40px;
+  color: white;
+  background-color: rgb(105, 22, 50);
+  position: absolute;
+  top: 415px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clock {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  border:10px solid #0787a3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clock .top {
+  position: absolute;
+  height: 8px;
+  width: 3px;
+  background-color: #0787a3;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.clock .right {
+  position: absolute;
+  height: 3px;
+  width: 8px;
+  background-color: #0787a3;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.clock .bottom {
+  position: absolute;
+  height: 8px;
+  width: 3px;
+  background-color: #0787a3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.clock .left {
+  position: absolute;
+  height: 8px;
+  width: 3px;
+  background-color: #0787a3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clock .center {
+  height: 6px;
+  width: 6px;
+  background-color: #0787a3;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clock .hour {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: time 60s infinite linear;
+}
+
+.clock .hour:before {
+  content: "";
+  height: 60px;
+  width: 3px;
+  background-color: #0787a3;
+  position: absolute;
+  top: 30px;
+}
+
+.clock .minute {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: time 30s infinite linear;
+
+}
+
+.clock .minute:before {
+  position: absolute;
+  content: "";
+  background-color: #0787a3;
+  height: 40px;
+  width: 1px;
+  top: 50px;
+}
+
+.clock .second {
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: time 15s infinite linear;
+
+}
+
+.clock .second:before {
+  position: absolute;
+  content: "";
+  background-color: #0787a3;
+  height: 45px;
+  width: 2px;
+  top: 45px;
+}
+
+@keyframes time {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
