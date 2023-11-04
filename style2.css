@@ -54,3 +54,62 @@ tfoot {
     background-color: rgb(255, 0, 0);
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HOME WORK*/
+
+body {
+    margin: 0 auto;
+    border: 1px solid gray
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.col-1 {
+    background-color: rgb(255, 247, 0);
+    color: white;
+}
+
+.col-2 {
+    background-color: rgb(68, 0, 255);
+    color: white;
+}
+
+.col-3 {
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+.col-4 {
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+
+.col-5 {
+    background-color: rgb(212, 0, 255);
+    color: white;
+}

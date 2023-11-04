@@ -62,113 +62,79 @@
 }
 
 /*HW3*/
-
-.structure {
-  width: 1000px;
-  font-size: 14px;
+body {
   margin: 0;
-  padding: 5px;
-  color: white;
-  background-color: rgb(139, 47, 76);
-  position: absolute;
-  top: 30px;
+  padding: 0;
 }
 
-.structure2 {
-  width: 1000px;
-  height: 40px;
+* {
+  text-transform: uppercase;
   color: white;
-  background-color: rgb(105, 22, 50);
-  position: absolute;
-  top: 100px;
 }
 
-.structure3 {
-  width: 250px;
-  height: 65px;
-  color: white;
-  background-color: rgb(218, 110, 146);
-  position: absolute;
-  top: 150px;
-  text-align: center;
+header {
+  margin-top: 0.5em;
+  width: 100%;
+  background-color: rgb(195, 30, 154);
+  padding: 1em 2em;
 }
 
-.structure4 {
-  width: 250px;
+menu,
+footer {
+  margin-top: 0.5em;
+  width: 100%;
+  background-color: rgb(87, 30, 68);
+  padding: 1em 2em;
+}
+
+main {
+  width: 650px;
+  padding: 1em 2em;
+  background-color: rgb(255, 52, 191);
+  margin: 0 auto;
+  margin-top: -200px;
+}
+
+
+section {
+  margin-top: 0.5em;
+  background-color: #ffaaeb;
+  padding: 1em 2em;
+}
+
+.left-aside {
+  margin-top: 1em;
+  width: 200px;
   height: 100px;
-  color: white;
-  background-color: rgb(218, 110, 146);
-  position: absolute;
-  top: 225px;
+  background-color: rgb(210, 89, 202);
   text-align: center;
 }
 
-.structure5 {
-  width: 600px;
-  height: 250px;
-  color: white;
-  background-color: rgb(218, 110, 146);
-  position: absolute;
-  top: 150px;
-  left: 270px;
+
+.right-aside {
+  width: 200px;
+  height: 150px;
+  background-color: rgb(210, 89, 202);
+  margin-top: -175px
 }
 
-.structure5 {
-  float: right;
-}
-.structure6 {
-  width: 550px;
-  height: 75px;
-  color: white;
-  background-color: rgb(253, 184, 207);
-  position: absolute;
-  top: 200px;
-  left: 300px;
-}
-
-.structure7 {
-  width: 550px;
-  height: 75px;
-  color: white;
-  background-color: rgb(253, 184, 207);
-  position: absolute;
-  top: 290px;
-  left: 300px;
-}
-
-.structure7 {
-  float: right;
-}
-
-.structure8 {
-  width: 100px;
-  height: 250px;
-  background-color: rgb(218, 110, 146);
-  position: absolute;
-  top: 150px;
-  right: 160px;
-}
-
-.structure8 {
+.right-aside {
   display: inline-block;
   color: white;
-  text-align: center;
 
   writing-mode: vertical-lr;
 
   letter-spacing: -4px;
   text-orientation: upright;
+  text-align: center;
 }
 
-.structure9 {
-  width: 1000px;
-  height: 40px;
-  color: white;
-  background-color: rgb(105, 22, 50);
-  position: absolute;
-  top: 415px;
+.right-aside {
+  float: right;
 }
 
+
+/* HOME WORK*/
 * {
   margin: 0;
   padding: 0;
